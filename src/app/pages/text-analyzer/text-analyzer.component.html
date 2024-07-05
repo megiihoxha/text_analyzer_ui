@@ -1,0 +1,6 @@
+<!-- text-analyzer.component.html -->
+<app-header></app-header>
+<div class="container">
+  <app-text-input (analysisEvent)="onAnalysisDone($event)"></app-text-input>
+  <app-results-display #resultsDisplay></app-results-display>
+</div>

@@ -1,0 +1,7 @@
+<form class="text-input-container">
+  <mat-form-field appearance="fill">
+    <mat-label>Enter your text in Spanish here</mat-label>
+    <textarea matInput placeholder="Enter the text here..." [(ngModel)]="textToAnalyze" name="textToAnalyze"></textarea>
+  </mat-form-field>
+  <button (click)="analyzeText()" mat-raised-button color="primary">Analyze</button>
+</form>

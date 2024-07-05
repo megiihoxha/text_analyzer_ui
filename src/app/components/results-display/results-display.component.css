@@ -1,0 +1,53 @@
+.results-display {
+  margin: 2em auto;
+  padding: 20px;
+  width: 100%;
+  max-width: 700px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.result-card {
+  margin-bottom: 20px;
+}
+
+.result-item {
+  margin-bottom: 40px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+}
+
+.result-item p {
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+.result-item p strong {
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+.result-detail {
+  margin-top: 10px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+/* Alternating background color for result items */
+.result-card:nth-child(even) .result-item {
+  background-color: #F3FEFF;
+}
+
+.result-card:nth-child(odd) .result-item {
+  background-color: #f9f9f9;
+}
+
+.word-item {
+  display: inline-block;
+  padding-bottom: 6px;
+}
+

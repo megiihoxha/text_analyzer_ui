@@ -1,0 +1,19 @@
+<div class="results-display">
+  <p *ngIf="results.length === 0">Your results will appear here...</p>
+  <div *ngFor="let item of results; let i = index" class="result-card">
+    <div class="result-item">
+      <p><strong>Text:</strong> {{ item.input_text }}</p>
+      <p><strong>Timestamp:</strong> {{ item.timestamp | date:'medium' }}</p>
+      <div *ngFor="let result of item.result.results" class="result-detail">
+        <div class="word-item">
+          <p><strong>Word:</strong> {{ result.word }}</p>
+          <p><strong>LEMMA:</strong> {{ result.lemma }}</p>
+          <p><strong>Part of Speech (POS):</strong> {{ result.pos }}</p>
+          <p><strong>Dependency Relation (DEP):</strong> {{ result.dep }}</p>
+          <p><strong>Morphology:</strong> {{ result.morph }}</p>
+          <p><strong>Translation:</strong> {{ result.translation }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
